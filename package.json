@@ -1,6 +1,6 @@
 {
-    "name": "digest",
-    "description": "A Ghost theme",
+    "name": "digest-tagged",
+    "description": "Digest ghost themed with tags.",
     "version": "1.0.0",
     "engines": {
         "ghost": ">=4.0.0",

@@ -34,7 +34,7 @@
         </section>
 
         <div class="gh-feed">
-            {{#get "posts" filter="primary_author:{{slug}}" limit="all"}}
+            {{#get "posts" filter="primary_author:{{slug}}" include="tags" limit="all"}}
                 {{#foreach posts}}
                     {{> loop}}
                 {{/foreach}}

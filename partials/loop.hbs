@@ -5,9 +5,16 @@
         </header>
 
         <div class="gh-card-excerpt">{{excerpt}}</div>
-
-        <footer class="gh-card-footer">
-            <time class="gh-card-date" datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
-        </footer>
     </a>
+
+    <footer class="gh-card-footer">
+        <div class="gh-article-meta" style="display: block; margin: 1.5em 0; line-height: 2.2em;">
+            <a href="{{url}}">
+                <time class="gh-card-date" datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
+            </a>
+            {{#foreach tags}}
+                <a class="gh-navigation-middle" style="background-color: #f2f2f2; margin: 0 0.5em; padding: 0.4em 0.3em; border-radius: 0.5em;" href="{{url}}">{{name}}</a>
+            {{/foreach}}
+        </div>
+    </footer>
 </article>
